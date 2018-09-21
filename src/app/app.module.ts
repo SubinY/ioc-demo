@@ -3,16 +3,23 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { SelectInjectModeModule } from './select-inject-mode/select-inject-mode.module';
+import { ShareModule } from './share/share.module';
+import { UseFactoryComponent } from './provider-performance/provider-performance.component';
+import { ProviderPerformanceModule } from './provider-performance/provider-performance.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UseFactoryComponent
   ],
   imports: [
     BrowserModule,
-    SelectInjectModeModule
+    SelectInjectModeModule,
+    ShareModule,
+    ProviderPerformanceModule
   ],
-  providers: [],
+  providers: [
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

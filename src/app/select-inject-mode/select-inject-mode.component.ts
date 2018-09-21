@@ -13,6 +13,7 @@ export class ProviderInComponent {
   name = 'ProviderIn';
 
   constructor(public service: InjectModeService) {
+    service.log();
   }
 }
 
@@ -35,7 +36,7 @@ export class NgModuleProviderComponent {
     <span>{{name}}——service2:{{injectMode2.serviceMode2}}</span>
     <p style="font-weight: 700;">在组件中meteData通过provider注入，这种方式按需实例化，跟随组件生命周期创建销毁，总结：对比@NgModule.providers，性能更优，能及时释放内存</p>
   `,
-  viewProviders: [InjectModeService]
+  viewProviders: [InjectMode2Service]
 })
 export class ViewProviderComponent {
   name = 'ViewProvider';
