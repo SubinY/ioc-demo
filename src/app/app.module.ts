@@ -4,19 +4,19 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { SelectInjectModeModule } from './select-inject-mode/select-inject-mode.module';
 import { ShareModule } from './share/share.module';
-import { UseFactoryComponent } from './provider-performance/provider-performance.component';
 import { ProviderPerformanceModule } from './provider-performance/provider-performance.module';
+import { DICompareModeModule } from './DI-compare/DI-compare.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UseFactoryComponent
   ],
   imports: [
     BrowserModule,
     SelectInjectModeModule,
     ShareModule,
-    ProviderPerformanceModule
+    // ProviderPerformanceModule,
+    DICompareModeModule
   ],
   providers: [
   ],
