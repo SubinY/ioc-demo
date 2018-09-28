@@ -4,11 +4,18 @@ import { hasDIService } from './components/has-DI/has-DI.service';
 import { MSGserviceNoInjectService } from './service/MSGService-noInject.service';
 import { LogserviceService } from './service/log.service';
 import { DIInjectService } from './components/DIInject/DIInject.service';
+import { MSGserviceService } from './service/MSGService.service';
+import { SendMessage } from './interface/SendMessage';
+import { CommunicationProvider } from './service/CommunicationProvider';
 
 @Component({
   selector: 'DI-comp',
   templateUrl: `./DI.component.html`,
-  viewProviders: [DIInjectService]
+  providers: [
+    DIInjectService,
+    // { provide: SendMessage, useClass: MSGserviceService },
+    CommunicationProvider
+  ]
 })
 export class DIComponent {
 

@@ -3,7 +3,7 @@ import { IPrintable } from "../interface/IPrintable";
 import { SendMessage } from "../interface/SendMessage";
 
 @Injectable()
-export class MSGserviceService implements IPrintable, SendMessage {
+export class FXserviceService implements IPrintable, SendMessage {
   constructor() { }
 
   printMessage() {
@@ -11,6 +11,6 @@ export class MSGserviceService implements IPrintable, SendMessage {
   }
 
   sendMessage() {
-    return 'has Inject provider msg from MSG words';
+    return 'has Inject provider msg from FX words';
   }
 }

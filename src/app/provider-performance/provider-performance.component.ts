@@ -18,4 +18,8 @@ export class UseFactoryComponent {
 
   constructor(private authService : AuthService) {
   }
+
+  changeAuth($event) {
+
+  }
 }
