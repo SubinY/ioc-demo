@@ -1,7 +1,7 @@
-import { environment } from "src/environments/environment";
+import { environment } from "../../../environments/environment";
 import { forwardRef } from "@angular/core";
-import { MSGserviceService } from "src/app/DI-compare/service/MSGService.service";
-import { SendMessage } from "src/app/DI-compare/interface/SendMessage";
+import { MSGserviceService } from "./MSGService.service";
+import { SendMessage } from "../interface/SendMessage";
 import { FXserviceService } from "./FXService.service";
 
 export let CommunicationProvider = {

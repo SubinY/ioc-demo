@@ -5,6 +5,7 @@ import { SendMessage } from '../../interface/SendMessage';
 @Injectable()
 export class DIInjectService {
 
+  // private msgService: MSGserviceService;
   private msgService: SendMessage;
 
   constructor(inmsgService: SendMessage) {

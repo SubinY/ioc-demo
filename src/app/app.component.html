@@ -1,4 +1,4 @@
-<section style="width: 100%; padding: 15px; border: 1px solid #ccc; margin-bottom: 20px;">
+<section style="padding: 15px; border: 1px solid #ccc; margin-bottom: 20px;">
   <providerIn></providerIn>
   <br>
   <ngModuleProvider></ngModuleProvider>
@@ -7,10 +7,15 @@
   <br>
 </section>
 
-<!-- <section style="width: 100%; padding: 15px; border: 1px solid #ccc; margin-bottom: 20px;">
+<!-- <section style="padding: 15px; border: 1px solid #ccc; margin-bottom: 20px;">
   <useFactory></useFactory>
 </section> -->
 
 <section>
   <DI-comp></DI-comp>
+</section>
+
+<section>
+  <h3>Name-manage</h3>
+  <single-info *ngFor="let person of persons" [infoReturn]="person"></single-info>
 </section>
